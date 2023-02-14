@@ -1,10 +1,8 @@
 ---
 title: Markdown Basics
-nav: Write
+nav: Basics
+description: We instinctively organize documents using visual styles to represent heading, paragraphs, and other elements--Markdown provides a set of basic conventions to mark this semantic structure more formally, while keeping it simple.
 ---
-
-Academic documents are usually organized using Headers and Paragraphs, which correspond to semantic structure elements even though it is mostly intuitive.
-
 
 ## Headings 
 
@@ -85,7 +83,7 @@ Both kinds of lists can be nested by tabbing in a level.
 - muffin
 ```
 </div>
-<div class="col-md-6  md-demo" markdown="1">
+<div class="col-md-6 md-demo" markdown="1">
 - dog
 - cat
 - muffin
@@ -134,22 +132,57 @@ Both kinds of lists can be nested by tabbing in a level.
 {% endcapture %}
 {% include card.html text=lists %}
 
-{% include alert.html text="Although Markdown is simple, it is important to remember that white space, blank lines, and tabs matter. If you are getting unexpected results when rendering, check your white space. For example, leaving two spaces at the end of a line will insert a `<br>` break." color="warning" %}
-
 ## Inline Elements
 
-{:.table .table-bordered}
-| Markdown | HTML |
-| --- | --- |
-| `*Emphasis*` or `_emphasis_` | *Emphasis* or _emphasis_ |
-| `**Strong**` or `__strong__` | **Strong** or __strong__ |
-| `inline [hyperlink](https://www.google.com)` | inline [hyperlink](https://www.google.com) |
-| `image ![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/208px-Markdown-mark.svg.png)` | image ![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/208px-Markdown-mark.svg.png) |
-| `footnote.[^1]` | footnote.[^1] |
+{% capture inline %}
+<div class="row">
+<div class="col-md-6" markdown="1">
+```
+*Emphasis* or _emphasis_
 
-`[^1]: example footnote definition.`
+**Strong** or __strong__
 
-[^1]: example footnote definition.
+**_Strong and Emphasis_**
+```
+</div>
+<div class="col-md-6 md-demo" markdown="1">
+*Emphasis* or _emphasis_
+
+**Strong** or __strong__
+
+**_Strong and Emphasis_**
+</div>
+</div>
+<hr>
+
+```
+[hyperlink](https://www.google.com)
+
+image: 
+
+![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/208px-Markdown-mark.svg.png)
+```
+
+[hyperlink](https://www.google.com)
+
+image: 
+
+![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/208px-Markdown-mark.svg.png)
+
+--------
+
+```
+example footnote.[^1]
+
+[^1]: footnote definition will show up at bottom.
+```
+
+example footnote.[^1]
+
+[^1]: footnote definition will show up at bottom.
+
+{% endcapture %}
+{% include card.html text=inline %}
 
 ## Code 
 
@@ -163,7 +196,7 @@ Both kinds of lists can be nested by tabbing in a level.
     and close with three more on a line. 
     {% raw %}```{% endraw %}
 
-    This makes it possible to copy unformatted code/text from your writing.
+    This makes it easier to copy unformatted code/text
 
 ----------------
 
@@ -175,7 +208,7 @@ open with three backticks alone on a line
 and close with three more on a line. 
 ```
 
-This makes it possible to copy unformatted code/text from your writing.
+This makes it easier to copy unformatted code/text
 
 {% endcapture %}
 {% include card.html text=code %}
@@ -205,17 +238,43 @@ Tables aren't supported by all Markdown converters, but can be useful for some q
 {% endcapture %}
 {% include card.html text=table %}
 
-## Block Elements
+## Block Quotes
 
-Here are some more things to try:
+{% capture bq %}
+```
+> Each line starts with greater-than space.
+> Any other markdown can be used.
+```
+
+-------
+
+> Each line starts with greater-than space.
+> Any other markdown can be used.
+
+{% endcapture %}
+{% include card.html text=bq %}
+
+## Horizontal Rule 
+
+{% capture hr %}
+
+```
+Three or more dashes on a line:
+
+----
 
 ```
 
-Horizontal rule is three or more dashes on a line:
+Three or more dashes on a line:
 
--------------
+----
 
-> Block quote.
-> Continuing the quote.
+{% endcapture %}
+{% include card.html text=hr %}
 
-```
+## Comments 
+
+`<!-- you can use HTML comments, they won't show up -->`
+
+{% include alert.html text="Although Markdown is simple, it is important to remember that white space, blank lines, and tabs matter. 
+If you are getting unexpected results when rendering, check your white space!" %}
