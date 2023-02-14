@@ -129,6 +129,14 @@ Both kinds of lists can be nested by tabbing in a level.
     - yum
 </div>
 </div>
+
+Note, many platforms will also support to-do lists following the pattern: 
+
+```
+- [ ] task one
+- [x] completed task
+```
+
 {% endcapture %}
 {% include card.html text=lists %}
 
