@@ -3,7 +3,6 @@ title: Reference & Resources
 nav: Resources
 ---
 
-
 ## Pandoc
 
 - [Pandoc](https://pandoc.org/)
