@@ -130,6 +130,8 @@ Both kinds of lists can be nested by tabbing in a level.
 </div>
 </div>
 
+------
+
 Note, many platforms will also support to-do lists following the pattern: 
 
 ```
