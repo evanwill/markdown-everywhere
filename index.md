@@ -15,7 +15,7 @@ This session introduces the basics of writing Markdown, useful applications, and
 
 {% include toc.html %}
 
-Hosted by [University of Idaho Library](http://www.lib.uidaho.edu/), {{ site.pub_year }}.
+Hosted by [Data Hub](https://www.lib.uidaho.edu/datahub/), University of Idaho Library, {{ site.pub_year }}.
 
 ------
 
