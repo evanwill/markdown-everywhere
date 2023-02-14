@@ -11,7 +11,7 @@ nav: Resources
 ## Tools
 
 - Just use any text editor!
-- [Pandoc](https://pandoc.org/)
+- [Pandoc](https://pandoc.org/) (see [md + pandoc workshop](https://evanwill.github.io/write-md/content/3-pandoc.html))
 - Web app editors:
     - [Dillinger](https://dillinger.io/) 
     - [StackEdit](https://stackedit.io/)

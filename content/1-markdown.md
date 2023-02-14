@@ -3,7 +3,7 @@ title: Markdown
 nav: Intro
 ---
 
-[Markdown](https://daringfireball.net/projects/markdown/){:target="_blank" rel="noopener"} is a quick and simple standard to create formatted documents in plaintext.
+Markdown is a quick and simple syntax to create formatted documents in plaintext.
 
 Originally developed in 2004 by John Gruber with Aaron Swartz based on how people intuitively write emails, it focuses on being human readable, yet designed to easily convert into HTML for the web.
 
@@ -16,13 +16,13 @@ Because of it's simplicity and flexibility, a growing number of websites, note t
 It is important to keep in mind that Markdown isn't a formal standard, but comes in "flavors" from various specifications or implementations that add additional features. 
 Some common flavors:
 
+- Original syntax + Pearl software [Markdown](https://daringfireball.net/projects/markdown/){:target="_blank" rel="noopener"} (John Gruber)
 - [CommonMark](https://commonmark.org/){:target="_blank" rel="noopener"} (attempt to standardize, led by John MacFarlane of Pandoc)
 - [GitHub Flavored Markdown (GFM)](https://github.github.com/gfm/){:target="_blank" rel="noopener"} (popular style that can be used any where on GitHub)
-- [Pandoc Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown){:target="_blank" rel="noopener"} (document-centric extensions)
+- [Pandoc Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown){:target="_blank" rel="noopener"} (extensions allow using Markdown to generate other document types)
 - [kramdown](https://kramdown.gettalong.org/syntax.html){:target="_blank" rel="noopener"} (the Ruby markdown parser)
 - [Markdown Extra](https://michelf.ca/projects/php-markdown/extra/){:target="_blank" rel="noopener"} (PHP)
-- [MultiMarkdown](https://fletcherpenney.net/multimarkdown/){:target="_blank" rel="noopener"}
-- [R Markdown](https://rmarkdown.rstudio.com/){:target="_blank" rel="noopener"}
+- [R Markdown](https://rmarkdown.rstudio.com/){:target="_blank" rel="noopener"} (RStudio's mix of R code blocks and Markdown)
 
 One of the benefits of these various Markdown parsers is that they usually allow a mix of other types of markup inside an `.md` file, including LaTeX style math, HTML elements, and code blocks making it a flexible base to write content in an efficient manner.
 

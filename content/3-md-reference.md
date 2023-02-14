@@ -1,7 +1,7 @@
 ---
 title: Markdown Basics
 nav: Basics
-description: We instinctively organize documents using visual styles to represent heading, paragraphs, and other elements--Markdown provides a set of basic conventions to mark this semantic structure more formally, while keeping it simple.
+description: We instinctively organize documents using visual styles to represent headings, paragraphs, and other elements--Markdown provides a set of basic conventions to mark this semantic structure more formally, while keeping it simple.
 ---
 
 ## Headings 

@@ -1,7 +1,7 @@
 ---
 title: Visual Demo
 nav: Demo
-description: Markdown is a simple syntax for writing content for the web. The plain text code below demonstrates all the basics--click the button to view how it will look rendered into HTML.
+description: The plain text code below demonstrates all the basics--click the button to view how it will look rendered into HTML.
 ---
 <style> #markdown-frame {  } #source { display: block; } #rendered { display: none; }</style>
 
